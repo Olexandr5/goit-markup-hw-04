@@ -265,30 +265,25 @@ teams-section
 }
 .teams-wrapper {
   padding: 30px 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .list.teams-social {
   display: flex;
   gap: 10px;
   justify-content: center;
 }
-.item.teams-social {
-  /* padding: 12px 14px;
-  width: 44px;
-  height: 44px; */
-}
-.social-svg {
-  fill: #afb1b8;
-  display: inline-flex;
-}
 .link.teams-social {
-  display: inline-flex;
+  display: flex;
   width: 44px;
   height: 44px;
   align-items: center;
   justify-content: center;
+  fill: #afb1b8;
 }
-.link.teams-social :hover,
-.link.teams-social :focus {
+.link.teams-social:hover,
+.link.teams-social:focus {
   border-radius: 50%;
 
   fill: var(--logo-footer);
@@ -310,37 +305,38 @@ clients section
 .clients-list {
   display: flex;
   gap: 30px;
+  justify-content: center;
 }
-.clients-item {
-  padding: 13px 31px;
+.link.link-svg {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-.clients-item :hover,
-.clients-item :focus {
-  color: var(--logo-text);
-}
-.clients-svg {
+
   fill: #afb1b8;
 }
-.container .link-svg {
-  display: inline-flex;
-  /* padding: 13px 31px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px; */
-}
-.clients-svg :hover,
-.clients-svg :focus {
+.link.link-svg:hover,
+.link.link-svg:focus {
   fill: var(--logo-text);
+  border-color: var(--logo-text);
 }
 
 /* ======================
 footer-section
 ====================== */
+.footer .container {
+  display: flex;
+}
 .footer {
   padding: 60px 0;
 
   background-color: #2f303a;
+}
+.footer-adress {
+  margin-right: 70px;
 }
 
 .logo-link-pic {
@@ -359,7 +355,7 @@ footer-section
   line-height: 1.4;
   letter-spacing: 0.03em;
 }
-.footer-address {
+.footer-addres {
   margin-top: 20px;
 
   font-size: 14px;
@@ -383,6 +379,30 @@ footer-section
 }
 .footer-item:not(:first-child) {
   margin-top: 9px;
+}
+.footer-social {
+  padding-top: 12px;
+}
+.social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--logo-footer);
+}
+.footer .list-social {
+  display: flex;
+}
+
+.footer-social .social-svg {
+  fill: var(--logo-footer);
+}
+.footer .item.teams-social {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 /* ======================
 2 pages
