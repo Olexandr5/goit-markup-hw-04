@@ -80,6 +80,22 @@ header-section
   letter-spacing: 0.02em;
   display: block;
 }
+.nav-item.after-1::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
+.nav-item.after-2::after {
+  content: '';
+  display: block;
+  width: 84px;
+  height: 4px;
+  background: #2196f3;
+  border-radius: 2px;
+}
 .nav-list {
   list-style: none;
   display: flex;
@@ -161,12 +177,12 @@ hero-section
   cursor: pointer;
   color: var(--logo-footer);
   background-color: var(--logo-text);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:active {
   background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 /* ======================
 features-section
